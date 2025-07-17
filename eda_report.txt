@@ -1,0 +1,30 @@
+# Titanic Dataset - EDA Summary
+
+## Key Features:
+- `Sex`: Strong indicator of survival — females survived more.
+- `Pclass`: First class passengers had higher survival rates.
+- `Age`: Related to survival, but contains missing values.
+- `Fare`: Higher fare often linked with better survival.
+
+## Missing Values:
+- Age: Some missing values.
+- Cabin: Too many missing values — might be dropped.
+- Embarked: Few missing values — can be filled.
+
+## Outliers:
+- `Fare` has large outliers — seen in boxplot.
+- `Age` has a few unusually high values.
+
+## Skewed/Imbalanced Features:
+- `Sex`: Slightly more males than females.
+- `Survived`: Imbalanced — more people did not survive (0).
+
+## Relationships with Target (`Survived`):
+- Higher survival rate for females.
+- Higher class passengers survived more.
+- Children (young age) had better survival.
+
+## Next Steps:
+- Impute missing values (`Age`, `Embarked`)
+- Drop or engineer `Cabin`
+- Consider feature engineering: extract `Title` from `Name`
